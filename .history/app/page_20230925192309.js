@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import works from './works.json'
+import works from '../json/data.json'
 
 export default function Home() {
   

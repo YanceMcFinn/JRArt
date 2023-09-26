@@ -2,15 +2,15 @@
 
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import works from './works.json'
 
 export default function Home() {
-  
-  const paintings = works
-
   async function getWorks(){
-    
+    const works = await fetch('works.json')
+    setPaintings(works.json())
+    console.log(paintings)
   }
+  const [paintings, setPaintings] = useState([])
+
   useEffect(()=>{
     getWorks()
   }, [])
@@ -18,14 +18,6 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>Jan's Art Page!</div>
       <div>
-        {paintings.map(art=>{
-          return (<><p>{art.title}</p>
-          <Image src={`/${art.title.replaceAll(" ", "_")}.jpg`}
-          
-          width={500}
-          height={500} /></>)
-          
-        })}
     </div>
       </main>
       )

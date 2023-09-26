@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import works from './works.json'
+import works from '../json/data.json'
 
 export default function Home() {
   
@@ -20,10 +20,7 @@ export default function Home() {
       <div>
         {paintings.map(art=>{
           return (<><p>{art.title}</p>
-          <Image src={`/${art.title.replaceAll(" ", "_")}.jpg`}
-          
-          width={500}
-          height={500} /></>)
+          <Image src={`../public/albedo.jpg`}/></>)
           
         })}
     </div>

@@ -1,0 +1,21 @@
+import Image from 'next/image'
+import { useState } from 'react'
+
+export default function Home() {
+  async function getWorks(){
+    const works = await fetch("works.json")
+    setPaintings(works)
+  }
+  const [paintings, setPaintings] = useState([])
+
+  useEffect(()=>{
+    getWorks()
+  })
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div>Jan's Art Page!</div>
+      <div>
+    </div>
+      </main>
+      )
+    }
