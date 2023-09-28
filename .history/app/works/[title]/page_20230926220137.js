@@ -1,6 +1,6 @@
-import data from '../../../json/works.json'
+import data from '../../works.json'
 
-console.log(data)
+console.log(data.json)
 
 export function generateStaticParams() {
     let works = data
@@ -12,10 +12,11 @@ function getPiece(params) {
   const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title)
   return piece}
   
-export default function Work({params}){
+export default function Work(params){
+  console.log("works" + data)
   const piece = getPiece(params)
-  console.log(data)
-  console.log(params.title)
+
+  console.log(piece)
   return(
     <div>
       <p>Test</p>

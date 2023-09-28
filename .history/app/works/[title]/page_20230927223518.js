@@ -1,6 +1,6 @@
 import data from '../../../json/works.json'
 
-console.log(data)
+console.log(data[1])
 
 export function generateStaticParams() {
     let works = data

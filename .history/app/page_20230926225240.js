@@ -22,7 +22,7 @@ export default function Home() {
     getWorks()
   }, [])
   return (
-    <main className="bg-black text-white">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>Jan's Art Page!</div>
       <div>
         {paintings.map(art=>{

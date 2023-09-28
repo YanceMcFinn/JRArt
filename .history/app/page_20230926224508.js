@@ -1,28 +1,31 @@
-'use client'
-
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import works from './works.json'
 import { getLocalData } from '@/lib/localdata'
 
+export async function generateStaticParams() {
+  const localData = await getLocalData();
+  // log in terminal bacause getStaticProps is executed server-side
+  console.log(localData); 
+  return {
+    props: { localData },
+  };
+}
 
-export default function Home() {
-  async function getWorks(){
-
-  }
+export default function Home({localData}) {
+  
   const paintings = works
-  const [paintings2,setPaintings2] = useState([])
+
+  console.log(localData)
 
   async function getWorks(){
-    art = await getLocalData()
-    setPaintings2(art)
-    console.log(paintings2)
+    
   }
   useEffect(()=>{
     getWorks()
   }, [])
   return (
-    <main className="bg-black text-white">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>Jan's Art Page!</div>
       <div>
         {paintings.map(art=>{

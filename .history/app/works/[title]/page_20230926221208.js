@@ -1,4 +1,4 @@
-import data from '../../../json/works.json'
+import data from '../../works.json'
 
 console.log(data)
 
@@ -14,7 +14,7 @@ function getPiece(params) {
   
 export default function Work({params}){
   const piece = getPiece(params)
-  console.log(data)
+
   console.log(params.title)
   return(
     <div>

@@ -5,24 +5,21 @@ import { useState, useEffect } from 'react'
 import works from './works.json'
 import { getLocalData } from '@/lib/localdata'
 
-
 export default function Home() {
-  async function getWorks(){
-
-  }
+  
   const paintings = works
-  const [paintings2,setPaintings2] = useState([])
+  const paintings2 = await getLocalData()
+
+  console.log(paintings2)
 
   async function getWorks(){
-    art = await getLocalData()
-    setPaintings2(art)
-    console.log(paintings2)
+    
   }
   useEffect(()=>{
     getWorks()
   }, [])
   return (
-    <main className="bg-black text-white">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>Jan's Art Page!</div>
       <div>
         {paintings.map(art=>{

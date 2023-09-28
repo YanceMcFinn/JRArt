@@ -1,6 +1,6 @@
-import data from '../../../json/works.json'
+import data from '../../works.json'
 
-console.log(data)
+console.log(data.json)
 
 export function generateStaticParams() {
     let works = data
@@ -14,8 +14,8 @@ function getPiece(params) {
   
 export default function Work({params}){
   const piece = getPiece(params)
-  console.log(data)
-  console.log(params.title)
+
+  console.log(piece)
   return(
     <div>
       <p>Test</p>

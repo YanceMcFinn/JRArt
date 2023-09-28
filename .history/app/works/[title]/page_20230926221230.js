@@ -1,4 +1,4 @@
-import data from '../../../json/works.json'
+import data from '../../works.json'
 
 console.log(data)
 
