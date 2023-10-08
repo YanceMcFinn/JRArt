@@ -27,11 +27,11 @@ export default function Home() {
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
           return (<div><p>{art.title}</p>
-          <a href={`/works/${art.title.toLowerCase()}`}><Image src={`/${art.title.replaceAll(" ", "_")}.jpg`}
+          <Image src={`/${art.title.replaceAll(" ", "_")}.jpg`}
           
           width={500}
           height={500}
-          alt={art.title} /></a></div>)
+          alt={art.title} /></div>)
           
         })}
     </div>

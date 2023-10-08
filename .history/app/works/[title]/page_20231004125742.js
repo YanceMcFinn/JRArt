@@ -1,7 +1,5 @@
 import data from '../../../json/works.json'
 
-import Image from 'next/image';
-
 export function generateStaticParams() {
     let works = data
     const params = works.map((piece) => ({
@@ -15,20 +13,12 @@ function getPiece(params) {
   
 export default function Work({params}){
   const piece = getPiece(params)
+  console.log(piece.title)
   return(
-    <div className="flex flex-row px-2 mt-5">
-      <div className="basis-1/2 align-items-center">
-        <Image src={`/${piece.title.replaceAll(" ", "_")}.jpg`}
-          
-          width={500}
-          height={500}
-          alt={piece.title} />
-      </div>
-      <div className="basis-1/2"> 
-        <p>{piece.title}</p>
-        <p>{piece.description}</p>
-      </div>
-     
+    <div>
+      <p>Test</p>
+      <p>{piece.title}</p>
+      <p>{piece.description}</p>
     </div>
   )
 }  
