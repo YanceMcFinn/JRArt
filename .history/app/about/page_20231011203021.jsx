@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function About() {
     return(
         <div className='text-main-color text-center justify-content-center mt-10'>
-            <Image src='/me.jpg'
+            <Image src={`/image/me.jpg`}
             className='mx-auto'
             width={300}
             height={445}
