@@ -10,7 +10,7 @@ export function generateStaticParams() {
     return params;
   }
 function getPiece(params) {
-  const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title.ToLowerCase().replaceAll("%20", " "))
+  const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title.replaceAll("%20", " "))
   return piece[0]}
   
 export default function Work({params}){
