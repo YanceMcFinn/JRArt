@@ -10,7 +10,7 @@ module.exports = {
       backgroundImage: {
       },
       colors: {
-        'main-color': '#dda15e'
+        mainColor: '#fefae0'
       },
     },
   },

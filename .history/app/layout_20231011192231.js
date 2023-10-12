@@ -3,7 +3,8 @@ import { Inter } from 'next/font/google'
 
 import Navbar from './components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'],
+className: 'text-main-color' })
 
 export const metadata = {
   title: 'Jan Roppo Art',

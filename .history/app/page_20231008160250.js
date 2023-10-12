@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image'
+
+import image from '../public/'
 import { useState, useEffect } from 'react'
 import works from './works.json'
 import { getLocalData } from '@/lib/localdata'
@@ -22,14 +24,12 @@ export default function Home() {
     getWorks()
   }, [])
   return (
-    <main className="bg-black text-white mt-10">
+    <main className="bg-black text-white">
+      <div>Jan's Art Page!</div>
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
           return (<div><p>{art.title}</p>
-          <a href={`/works/${art.title.toLowerCase()}`}><Image src={`/images/${art.title.replaceAll(" ", "_")}.jpg`}
-          
-          width={500}
-          height={500}
+          <a href={`/works/${art.title.toLowerCase()}`}><img src={`../public/${art.title.replaceAll(" ", "_")}.jpg`}
           alt={art.title} /></a></div>)
           
         })}

@@ -10,14 +10,16 @@ export function generateStaticParams() {
     return params;
   }
 function getPiece(params) {
-  const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title.replaceAll("%20", " "))
+  const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title.replaceAll("%", " "))
   return piece[0]}
   
 export default function Work({params}){
   const piece = getPiece(params)
+  console.log(params)
   return(
     <div className="flex flex-row px-2 mt-10 text-main-color">
-      <div className="basis-1/2">
+      <p>{params.title}</p>
+      {/* <div className="basis-1/2">
         <Image src={`/images/${piece.title.replaceAll(" ", "_")}.jpg`}
           className='mx-auto'
           width={500}
@@ -27,7 +29,7 @@ export default function Work({params}){
       <div className="basis-1/2"> 
         <div className='text-2xl title'>{piece.title}</div>
         <p>{piece.description}</p>
-      </div>
+      </div> */}
      
     </div>
   )

@@ -17,6 +17,7 @@ export default function Work({params}){
   const piece = getPiece(params)
   return(
     <div className="flex flex-row px-2 mt-10 text-main-color">
+      <p>{params.title}</p>
       <div className="basis-1/2">
         <Image src={`/images/${piece.title.replaceAll(" ", "_")}.jpg`}
           className='mx-auto'

@@ -22,7 +22,8 @@ export default function Home() {
     getWorks()
   }, [])
   return (
-    <main className="bg-black text-white mt-10">
+    <main className="bg-black text-white">
+      <div>Jan's Art Page!</div>
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
           return (<div><p>{art.title}</p>

@@ -3,9 +3,9 @@ import React from "react";
 const Navbar = () => {
     return(    
     <>
-    <div className="top w-full h-14 px-5 py-3 text-main-color border-b border-b-main-color/50">
+    <div className="top w-full h-12 px-5 py-3 text-main-color">
       <div className="float-left title text-2xl">
-        <a className="hover:text-white" href="/">Jan Roppo Art</a>
+        Jan Roppo Art
       </div>
       <div className="float-right title text-xl">
         <ul>

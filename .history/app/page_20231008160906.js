@@ -22,11 +22,12 @@ export default function Home() {
     getWorks()
   }, [])
   return (
-    <main className="bg-black text-white mt-10">
+    <main className="bg-black text-white">
+      <div>Jan's Art Page!</div>
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
           return (<div><p>{art.title}</p>
-          <a href={`/works/${art.title.toLowerCase()}`}><Image src={`/images/${art.title.replaceAll(" ", "_")}.jpg`}
+          <a href={`/works/${art.title.toLowerCase()}`}><Image src={`/${art.title.replaceAll(" ", "_")}.jpg`}
           
           width={500}
           height={500}

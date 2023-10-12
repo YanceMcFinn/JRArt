@@ -10,7 +10,7 @@ export function generateStaticParams() {
     return params;
   }
 function getPiece(params) {
-  const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title.replaceAll("%20", " "))
+  const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title)
   return piece[0]}
   
 export default function Work({params}){
@@ -25,7 +25,7 @@ export default function Work({params}){
           alt={piece.title} />
       </div>
       <div className="basis-1/2"> 
-        <div className='text-2xl title'>{piece.title}</div>
+        <div className='text-2xl title'>{piece.title}</p>
         <p>{piece.description}</p>
       </div>
      
