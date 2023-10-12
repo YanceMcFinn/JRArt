@@ -18,7 +18,7 @@ export default function Work({params}){
   return(
     <div className="flex flex-row px-2 mt-10 text-main-color">
       <div className="basis-1/2">
-        <Image src={`/static/img/${piece.title.replaceAll(" ", "_")}.jpg`}
+        <Image src={`/img/${piece.title.replaceAll(" ", "_")}.jpg`}
           className='mx-auto'
           width={500}
           height={500}
