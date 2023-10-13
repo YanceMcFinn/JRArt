@@ -23,29 +23,31 @@ export default function Home() {
   //   getWorks()
   // }, [])
 
-  function randomHexColor(){
+  const randomHexColor = ()=>{
     let digits = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','5']
+    let randomDigit = Math.Floor(Math.random() * digits.length)
     let hexCodeArr = []
     for(let i=0; i<6; i++){
-      let randomDigit = Math.floor(Math.random() * digits.length)
       hexCodeArr.push(digits[randomDigit])
     }
-    return hexCodeArr.join("")
+    return hexCodeArr.join()
   }
+
+  console.log(randomHexColor)
 
   return (
     <main className="bg-black text-white mt-10">
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
           return (
-          <div className='text-center'>
+          <div>
             <p>{art.title}</p>
-            <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
+            <a href={`/works/${art.title.toLowerCase()}`}>
               {/* <img src={`./static/img/${art.title.replaceAll(" ", "_")}.jpg`}
               width={500}
               height={500}
               alt={art.title} /> */}
-              <FontAwesomeIcon icon={faBrush} size="2xl" style={{color: `#${randomHexColor()}`,}} />
+              <FontAwesomeIcon icon={faBrush} style={{color: "#1a54b7",}} />
             </a>
           </div>)
           

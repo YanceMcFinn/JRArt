@@ -38,14 +38,14 @@ export default function Home() {
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
           return (
-          <div className='text-center'>
+          <div>
             <p>{art.title}</p>
-            <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
+            <a href={`/works/${art.title.toLowerCase()}`}>
               {/* <img src={`./static/img/${art.title.replaceAll(" ", "_")}.jpg`}
               width={500}
               height={500}
               alt={art.title} /> */}
-              <FontAwesomeIcon icon={faBrush} size="2xl" style={{color: `#${randomHexColor()}`,}} />
+              <FontAwesomeIcon icon={faBrush} style={{color: `#${randomHexColor()}`,}} />
             </a>
           </div>)
           

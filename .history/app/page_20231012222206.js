@@ -38,7 +38,7 @@ export default function Home() {
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
           return (
-          <div className='text-center'>
+          <div>
             <p>{art.title}</p>
             <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
               {/* <img src={`./static/img/${art.title.replaceAll(" ", "_")}.jpg`}
