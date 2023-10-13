@@ -23,12 +23,12 @@ export default function Work({params}){
     <div className="flex flex-row px-2 mt-10 text-main-color">
       <div className="basis-1/2">
         <Image src={imgSrc}
-          className='mx-auto'
+          className='ml-auto'
           width={500}
           height={500}
           alt={piece.title} />
       </div>
-      <div className="basis-1/2 px-4"> 
+      <div className="basis-1/2 px-2"> 
         <div className='text-2xl title'>{piece.title}</div>
         <p>{piece.description}</p>
       </div>

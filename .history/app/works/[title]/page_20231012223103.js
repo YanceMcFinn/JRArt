@@ -28,7 +28,7 @@ export default function Work({params}){
           height={500}
           alt={piece.title} />
       </div>
-      <div className="basis-1/2 px-4"> 
+      <div className="basis-1/2 px-3"> 
         <div className='text-2xl title'>{piece.title}</div>
         <p>{piece.description}</p>
       </div>
