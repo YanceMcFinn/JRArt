@@ -41,7 +41,7 @@ console.log(imageSrcs)
           <div className='text-center'>
             <p>{art.title}</p>
             <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
-              <img src={imageSrcs[art.title].default.src}
+              <img src={imageSrcs[art.title]}
               width={500}
               height={500}
               alt={art.title} />

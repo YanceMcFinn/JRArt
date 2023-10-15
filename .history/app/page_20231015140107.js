@@ -29,19 +29,17 @@ export default function Home() {
     }
     return hexCodeArr.join("")
   }
-paintings.map((art) =>{
-  imageSrcs[art.title]=require(`../public/static/img/${art.title.toLowerCase().replaceAll(" ", "_")}.jpg`)
-})
-console.log(imageSrcs)
+
   return (
     <main className="bg-black text-white mt-10">
       <div className="grid grid-cols-4 gap-2 place-items-center mx-5">
         {paintings.map(art=>{
+          imageSrcs[art.title]=require(`../public/static/img/${art.title.toLowerCase().replaceAll(" ", "_")}.jpg`)
           return (
           <div className='text-center'>
             <p>{art.title}</p>
             <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
-              <img src={imageSrcs[art.title].default.src}
+              <img src={imageSrcs[art.title]}
               width={500}
               height={500}
               alt={art.title} />
