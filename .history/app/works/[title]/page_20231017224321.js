@@ -6,7 +6,7 @@ import Image from 'next/image';
 export function generateStaticParams() {
     let works = data
     const params = works.map((piece) => ({
-      title: piece.title.replaceAll("?","")
+      title: piece.title
     }))
     return params;
   }
