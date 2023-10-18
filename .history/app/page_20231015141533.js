@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import works from '../json/works.json'
+import works from './works.json'
 // import { getLocalData } from '@/lib/localdata'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -30,7 +30,7 @@ export default function Home() {
     return hexCodeArr.join("")
   }
 paintings.map((art) =>{
-  imageSrcs[art.title]=require(`../public/static/img/${art.title.toLowerCase().replaceAll(" ", "_").replaceAll("?","")}.jpg`)
+  imageSrcs[art.title]=require(`../public/static/img/${art.title.toLowerCase().replaceAll(" ", "_")}.jpg`)
 })
   return (
     <main className="bg-black text-white mt-10">

@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import works from '../json/works.json'
+import works from './works.json'
 // import { getLocalData } from '@/lib/localdata'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

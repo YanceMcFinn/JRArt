@@ -30,8 +30,8 @@ export default function Work({params}){
           alt={piece.title} />
       </div>
       <div className="basis-1/2 px-4"> 
-        <div className='text-4xl title'>{piece.title}</div>
-        <div className='text-l text-stone-500 mb-5'><i>{piece.dimensions} | {piece.materials}</i></div>
+        <div className='text-2xl title'>{piece.title}</div>
+        <div className='text-stone-500'>{piece.dimensions}|{piece.materials}</div>
         <p>{piece.description}</p>
       </div>
      

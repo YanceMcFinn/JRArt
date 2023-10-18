@@ -1,0 +1,102 @@
+[
+    {
+        "title" : "Josephine",
+        "id": 0,
+        "dimensions": "36 x 36",
+        "materials": "acrylic on canvas",
+        "price": 750,
+        "sold": false,
+        "prints available": true,
+        "description": "This started out being non-representational, and then I decided to add a figure to it. I am really enjoying using my foam rollers, and of course I added some stenciling to it."
+    },
+    {
+        "title" : "Duo",
+        "id": 0,
+        "dimensions": "36 x 36",
+        "materials": "acrylic on canvas",
+        "price": 750,
+        "sold": false,
+        "prints available": true,
+        "description": "This is two abstract figures in their finest red dresses, at a party somewhere fabulous."
+    },
+    {
+        "title" : "Threshold",
+        "id": 0,
+        "dimensions": "24 x 36",
+        "materials": "acrylic on canvas",
+        "price": 600,
+        "sold": false,
+        "prints available": true,
+        "description": "This is a figurative piece, with a stylized figure covered with stencils. There is also stenciling in the background and on the curtain. She is transitioning from one area and is poised on the threshold of something new."
+    },
+    {
+        "title" : "Albedo",
+        "id": 0,
+        "dimensions": "36 x 48",
+        "materials": "acrylic on canvas",
+        "price": 1000,
+        "sold": false,
+        "prints available": true,
+        "description": "This entire piece was done by moving one large stencil around the canvas, and changing the colors as I went along."
+    },
+    {
+        "title" : "Reflection",
+        "id": 1,
+        "dimensions": "24 x 24",
+        "materials": "acrylic on canvas",
+        "price": 300,
+        "sold": false,
+        "prints available": true,
+        "description": "This is a nice little painting, done with some rubber cement resist, and a little bit of stenciling."
+    },
+    {
+        "title" : "Oasis",
+        "id": 2,
+        "dimensions": "16 x 20",
+        "materials": "acrylic on canvas",
+        "price": 200,
+        "sold": false,
+        "prints available": true,
+        "description": "This is a colorful little piece with a lot of energy and movement. It was fun to do."
+    },
+    {
+        "title" : "Nebula",
+        "id": 3,
+        "dimensions": "16 x 20",
+        "materials": "acrylic on canvas",
+        "price": 200,
+        "sold": false,
+        "prints available": true,
+        "description": "This is a small painting with a limited color palette, that is supposed to convey a feeling of lightness and spaciousness."
+    },
+    {
+        "title" : "Family Time",
+        "id": 4,
+        "dimensions": "12 x 16",
+        "materials": "acrylic on canvas",
+        "price": 150,
+        "sold": false,
+        "prints available": true,
+        "description": "This is a cheerful little painting, where the figures have been carved out of a patterned background."
+    },
+    {
+        "title": "Sanctuary",
+        "id": 5,
+        "dimensions": "36 x 48",
+        "materials": "acrylic on canvas",
+        "price": 1000,
+        "sold": true,
+        "prints available": false,
+        "description": "My goal with this was to see if I could successfully combine acrylic paint with areas of alcohol ink. I knew that the cells created by the ink would look like bubbles, so I decided on a watery theme, done in blues and greens."
+    },
+    {
+        "title" : "Replicant",
+        "id": 6,
+        "dimensions": "36 x 36",
+        "materials": "acrylic on canvas",
+        "price": 750,
+        "sold": false,
+        "prints available": false,
+        "description": "This entire piece was done by moving one large stencil around the canvas, and changing the colors as I went along."
+    }
+]

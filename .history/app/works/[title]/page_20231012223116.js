@@ -12,12 +12,11 @@ export function generateStaticParams() {
   }
 
 function getPiece(params) {
-  const piece = data.filter((piece)=> piece.title.toLowerCase().replaceAll("?","") == params.title.toLowerCase().replaceAll("%20"," "))
+  const piece = data.filter((piece)=> piece.title.toLowerCase() == params.title.toLowerCase().replaceAll("%20", " "))
   return piece[0]}
   
 export default function Work({params}){
   const piece = getPiece(params)
-  console.log(piece)
   let srctest = `../../../public/static/img/${params.title.toLowerCase().replaceAll("%20", "_")}.jpg`
   const imgSrc = require(`../../../public/static/img/${params.title.toLowerCase().replaceAll("%20", "_")}.jpg`)
   return(
@@ -30,8 +29,7 @@ export default function Work({params}){
           alt={piece.title} />
       </div>
       <div className="basis-1/2 px-4"> 
-        <div className='text-4xl title'>{piece.title}</div>
-        <div className='text-l text-stone-500 mb-5'><i>{piece.dimensions} | {piece.materials}</i></div>
+        <div className='text-2xl title'>{piece.title}</div>
         <p>{piece.description}</p>
       </div>
      
