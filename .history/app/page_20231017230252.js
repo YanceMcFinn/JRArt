@@ -23,7 +23,7 @@ paintings.map((art) =>{
   imageSrcs[art.title]=require(`../public/static/img/${art.title.toLowerCase().replaceAll(" ", "_").replaceAll("?","")}.jpg`)
 })
   return (
-    <main className="bg-black text-white mt-20">
+    <main className="bg-black text-white mt-10">
       <div className="grid grid-cols-4 gap-7 place-items-center mx-5">
         {paintings.map(art=>{
           return (

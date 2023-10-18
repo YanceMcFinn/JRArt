@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
     return(    
     <>
-    <div className="top-0 w-full h-14 bg-black px-5 py-3 text-main-color border-b border-b-main-color/50 fixed">
+    <div className="top w-full h-14 px-5 py-3 text-main-color border-b border-b-main-color/50 fixed">
       <div className="float-left title text-2xl">
         <a className="hover:text-white" href="/">Jan Roppo Art</a>
       </div>
