@@ -35,8 +35,8 @@ export default function Work({params}){
         <div className='w-full mb-5'>
           <p>{piece.description}</p>
         </div>
-        <div className='self-end mb-10 title text-2xl'>
-        <a href='/' className='hover:text-white'>{`< Back to gallery`}</a>
+        <div className='self-end mb-10 title text-xl'>
+        {`< Back to gallery`}
       </div>
       </div>
   

@@ -29,17 +29,14 @@ export default function Work({params}){
           height={500}
           alt={piece.title} />
       </div>
-      <div className="basis-1/2 h-[calc(100vh-74px)] px-4"> 
+      <div className="basis-1/2 px-4"> 
         <div className='text-4xl title'>{piece.title}</div>
         <div className='text-l text-stone-500 mb-5'><i>{piece.dimensions} | {piece.materials}</i></div>
-        <div className='w-full mb-5'>
-          <p>{piece.description}</p>
-        </div>
-        <div className='self-end mb-10 title text-2xl'>
-        <a href='/' className='hover:text-white'>{`< Back to gallery`}</a>
+        <p>{piece.description}</p>
       </div>
+      <div className='justify-self-end pl-4 mb-10 title text-xl'>
+        Back to gallery
       </div>
-  
      
     </div>
   )
