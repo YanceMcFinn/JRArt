@@ -8,11 +8,11 @@ import Signature from '../../public/static/img/Jan_signature.svg'
 export default function About() {
     const artistPhoto = require('../../public/static/img/me.jpg')
     return(
-        <div className='text-main-color text-center justify-content-center mt-20 h-[calc(100vh-74px)]'>
+        <div className='text-main-color text-center justify-content-center mt-20'>
             <Image src={artistPhoto}
             className='mx-auto'
-            width={280}
-            height={400}
+            width={300}
+            height={445}
             alt="me" />
             <div className='mt-3 w-9/12 mx-auto'>
                 <div className='title text-3xl justify-items-center'>About the Artist</div>

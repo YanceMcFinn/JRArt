@@ -19,6 +19,7 @@
     "swr": "^2.2.4"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",

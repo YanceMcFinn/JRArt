@@ -2,19 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
 /* body {
  background-color: black;
 } */
 
-
 .title {
-    font-family: 'Macondo Swash Caps', cursive;
+    font-family: 'Macondo', cursive;
 }
 
 html {
     --s: 220px; /* control the size */
-    --c1: #150e05;
+    --c1: #3c2c1a;
     --c2: #000000;
     
     --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
@@ -26,6 +24,5 @@ html {
       conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
       var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
     background-size: var(--s) var(--s);
-    background-attachment: fixed;
   }
   

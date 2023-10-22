@@ -7,11 +7,14 @@ const nextConfig = {webpack(config) {
   })
 
   return config
-},
-reactStrictMode: true,
-    eslint: {
-      ignoreDuringBuilds: true,
-    },  
+},  
 }
 
 module.exports = nextConfig
+
+module.exports = {
+    reactStrictMode: true,
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+}

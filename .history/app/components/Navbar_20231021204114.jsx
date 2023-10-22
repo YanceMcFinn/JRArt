@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="float-left title text-3xl">
         <a className="hover:text-white" href="/">Jan Roppo Art</a>
       </div>
-      <div className="mt-1 float-right title text-xl">
+      <div className="float-right title text-xl">
         <ul>
         <li className="inline px-2">
             <a href="/" className="hover:text-white">Works</a>

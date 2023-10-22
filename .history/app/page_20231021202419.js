@@ -31,7 +31,7 @@ paintings.map((art) =>{
             <p>{art.title}</p>
             <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
               <img src={imageSrcs[art.title].default.src}
-              className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              // className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
               width={500}
               height={500}
               alt={art.title} />

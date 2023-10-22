@@ -11,7 +11,7 @@ export default function About() {
         <div className='text-main-color text-center justify-content-center mt-20 h-[calc(100vh-74px)]'>
             <Image src={artistPhoto}
             className='mx-auto'
-            width={280}
+            width={270}
             height={400}
             alt="me" />
             <div className='mt-3 w-9/12 mx-auto'>
