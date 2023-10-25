@@ -24,34 +24,18 @@ paintings.map((art) =>{
 })
   return (
     <main className="text-white mt-20">
-      <div className="grid grid-cols-3 gap-8 place-items-center mx-20">
+      <div className="grid grid-cols-3 gap-8 place-items-center">
         {paintings.map(art=>{
           return (
-          <div className='text-center relative max-w-xs overflow-hidden bg-cover bg-no-repeat'>
-
+          <div className='text-center'>
+            <p>{art.title}</p>
             <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
               <img src={imageSrcs[art.title].default.src}
               className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
               width={500}
               height={500}
               alt={art.title} />
-            
-            <div
-        className="z-0 absolute flex items-center justify-center bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-main-color bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50">
-          {/* {art.title} */}
-        </div>
-        </a>
-
-            {/* Code for "zoom" effect */}
-            {/* <p>{art.title}</p>
-            <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
-              <img src={imageSrcs[art.title].default.src}
-              className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-              width={500}
-              height={500}
-              alt={art.title} />
-            </a> */}
-            
+            </a>
           </div>)
           
         })}

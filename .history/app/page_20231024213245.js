@@ -28,6 +28,7 @@ paintings.map((art) =>{
         {paintings.map(art=>{
           return (
           <div className='text-center relative max-w-xs overflow-hidden bg-cover bg-no-repeat'>
+            <p>{art.title}</p>
 
             <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
               <img src={imageSrcs[art.title].default.src}
@@ -35,12 +36,13 @@ paintings.map((art) =>{
               width={500}
               height={500}
               alt={art.title} />
-            
+            </a>
             <div
-        className="z-0 absolute flex items-center justify-center bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-main-color bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50">
-          {/* {art.title} */}
+        className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50">
         </div>
-        </a>
+        <div className='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden opacity-0 transition duration-300 ease-in-out hover:opacity-100 items-center justify-center'>
+            TEST
+        </div>
 
             {/* Code for "zoom" effect */}
             {/* <p>{art.title}</p>
