@@ -24,7 +24,7 @@ paintings.map((art) =>{
 })
   return (
     <main className="text-white mt-20">
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 place-items-center mx-20">
+      <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-8 place-items-center md:mx-20 sm:mx-10">
         {paintings.map(art=>{
           return (
           <div className='relative max-w-xs '>

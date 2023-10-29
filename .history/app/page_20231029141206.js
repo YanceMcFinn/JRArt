@@ -24,14 +24,14 @@ paintings.map((art) =>{
 })
   return (
     <main className="text-white mt-20">
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 place-items-center mx-20">
+      <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-8 place-items-center mx-20">
         {paintings.map(art=>{
           return (
-          <div className='relative max-w-xs '>
+          <div className=''>
 
             <a href={`/works/${art.title.toLowerCase()}`}  className='mx-auto'>
               <img src={imageSrcs[art.title].default.src}
-              className=" transition duration-300 ease-in-out w-auto h-auto"
+              className="max-w-xs transition duration-300 ease-in-out w-auto h-auto"
               // width={500}
               // height={500}
               alt={art.title} />

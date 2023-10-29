@@ -22,9 +22,9 @@ export default function Work({params}){
   const imgSrc = require(`../../../public/static/img/${params.title.toLowerCase().replaceAll("%20", "_")}.jpg`)
   return(
     <div className="flex md:flex-row flex-col px-2 mt-20 text-main-color">
-      <div className="basis-1/2 md:h-[calc(100vh-74px)]">
+      <div className="basis-1/2">
         <Image src={imgSrc}
-          className='mx-auto  pb-10 h-full w-auto sm:max-w-screen-sm'
+          className='mx-auto h-[calc(100vh-74px)] pb-10 w-auto max-w-full h-auto'
           width={500}
           height={500}
           alt={piece.title} />
