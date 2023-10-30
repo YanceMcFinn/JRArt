@@ -29,7 +29,7 @@ html {
     background-attachment: fixed;
   }
 
-  .dropdown:hover .dropdown-menu {
+  .dropdown:target .dropdown-menu {
     display: block;
   }
   

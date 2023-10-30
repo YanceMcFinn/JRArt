@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import works from '../json/works.json'
 // import { getLocalData } from '@/lib/localdata'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBrush } from '@fortawesome/free-solid-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false

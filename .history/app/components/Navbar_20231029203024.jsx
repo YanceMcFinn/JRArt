@@ -19,7 +19,7 @@ const Navbar = () => {
         <ul>
 
           <li className="dropdown inline sm:hidden inline-block relative">
-            <button className="text-2xl">
+            <button className="text-xl">
               <FontAwesomeIcon icon={faBars} />
             </button>
             <ul class="dropdown-menu absolute right-0 hidden text-main-color bg-black w-40 pt-1 rounded border border-main-color">
