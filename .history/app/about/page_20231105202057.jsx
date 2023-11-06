@@ -7,7 +7,6 @@ import Signature from '../../public/static/img/Jan_signature.svg'
 
 export default function About() {
     const artistPhoto = require('../../public/static/img/me.jpg')
-    const safariSig = require ('../../public/static/img/Jan_signature.svg')
     return(
         <div className='text-main-color text-center justify-content-center mt-20 h-[calc(100vh-74px)]'>
             <Image src={artistPhoto}
@@ -21,6 +20,8 @@ export default function About() {
                 <div className='mx-auto sm:w-full sm-:pl-0 md:pl-20 md:w-6/12 flex justify-center'>
                     <Signature className="fill-main-color"/>
                 </div>
+                <object type="image/svg+xml" data={Signature}></object>
+
             </div>
         </div>
     )

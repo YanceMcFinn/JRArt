@@ -21,6 +21,8 @@ export default function About() {
                 <div className='mx-auto sm:w-full sm-:pl-0 md:pl-20 md:w-6/12 flex justify-center'>
                     <Signature className="fill-main-color"/>
                 </div>
+                <object type="image/svg+xml" data={safariSig}></object>
+
             </div>
         </div>
     )

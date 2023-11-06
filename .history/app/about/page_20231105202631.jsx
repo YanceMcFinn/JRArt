@@ -21,6 +21,8 @@ export default function About() {
                 <div className='mx-auto sm:w-full sm-:pl-0 md:pl-20 md:w-6/12 flex justify-center'>
                     <Signature className="fill-main-color"/>
                 </div>
+                <svg height="16px" width="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M60......"></path></svg>
+
             </div>
         </div>
     )

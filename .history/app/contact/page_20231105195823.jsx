@@ -18,6 +18,7 @@ export default function Contact() {
                         <textarea id="message" name="message" rows="6" placeholder="Leave a comment..." className='rounded w-full px-2 mt-2 bg-white/25 border border-main-color text-main-color placeholder-main-color/50 focus:border-main-color focus:border-2 focus:outline-none focus:ring-0'></textarea>
                     </div>
           <button type="submit" className='bg-main-color text-black title text-xl rounded px-4 py-1 mt-2'>Send message</button>
+          <input type="hidden" name="_next" value="/thank_you"></input>
       </form>
         </div>
     )
