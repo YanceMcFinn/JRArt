@@ -24,11 +24,9 @@ export default function Work({params}){
     <div className="flex md:flex-row flex-col px-2 mt-20 text-main-color">
       <div className="basis-1/2 md:h-[calc(100vh-74px)]">
         <Image src={imgSrc}
-          className='mx-auto pb-10 h-auto w-auto md:max-w-full md:max-h-full'
+          className='mx-auto  pb-10 h-auto w-auto md:max-w-full md:max-h-full'
           width={500}
           height={500}
-          ObjectFit="contain"
-          layout="responsive"
           alt={piece.title} />
       </div>
       <div className="basis-1/2 h-[calc(100vh-74px)] px-4"> 
