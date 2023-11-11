@@ -4,7 +4,7 @@ export default function Contact() {
     return(
         <div className='text-main-color text-center justify-content-center mt-20'>
             <div className='title text-center text-4xl mb-3'>Contact Me</div>
-                <form className='md:w-9/12 mx-auto justify-center' action="https://formsubmit.co/janrt1@gmail.com" method="POST">
+                <form className='md:w-9/12 mx-auto justify-center' action="https://formsubmit.co/fsdoubleflip@gmail.com" method="POST">
                     <div className='w-9/12 md:w-6/12 mb-2 flex justify-center mx-auto'>
                         <label for="email" className='pr-3 title text-xl'>Your email address</label>
                         <input type="email" name="email" className='rounded w-6/12 px-2 bg-white/25 border border-main-color text-main-color placeholder-main-color/50 focus:border-main-color focus:border-2 focus:outline-none focus:ring-0'id="email" placeholder="Your email address" required/>
